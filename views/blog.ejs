@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head') %>
+    <title>View Post</title>
+   
+</head>
+
+<body class="min-vh-100">
+  <%- include('./partials/nav') %>
+
+    <main class="position-relative container-fluid mt-1 p-2">
+        <div class="m-auto w-100 flex-row justify-content-start p-2 align-items-start mt-1" style="max-width: 600px">
+            <div>
+                <img src="<%= blog.createdBy.profileImageUrl
+                %>" class="rounded-circle" style="width: 35px" />
+               <span>
+                <%= blog.createdBy.fullName%>
+               </span> 
+            </div>
+            <div class="card-body pt-0">
+                <h4 class="card-title center text-center m-3">
+                   <%= blog.title %>
+                </h4>
+                <img src="<%= blog.postImageUrl %>" class="w-100 img-thumbnail object-fit-xxl-contain"
+                    style="height: 350px" />
+
+                <p class="card-text mt-3 p-1 w-100 "  >
+                    
+                    <pre style="white-space: pre-wrap;
+                    word-wrap: break-word; font-size: large;" > <%= blog.body %></pre>
+                </p>
+            </div>
+        </div>
+
+        <%- include('./partials/comment') %>
+    </main>
+
+   
+</body>
+<%- include('./partials/scripts') %>
+</html>

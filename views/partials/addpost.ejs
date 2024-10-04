@@ -1,0 +1,65 @@
+<button
+type="button"
+data-bs-toggle="offcanvas"
+data-bs-target="#offcanvasBottom"
+aria-controls="offcanvasBottom"
+class="btn btn-dark rounded-circle display-2 position-fixed bottom-0 end-0 m-3"
+style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+>
++
+</button>
+
+<div
+class="offcanvas offcanvas-bottom w-100 m-auto"
+tabindex="-1"
+id="offcanvasBottom"
+aria-labelledby="offcanvasBottomLabel"
+style="height: 500px; max-width: 900px; border-radius: 10px"
+>
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="offcanvasBottomLabel ">Add Post</h5>
+  <button
+    type="button"
+    class="btn-close text-reset"
+    data-bs-dismiss="offcanvas"
+    aria-label="Close"
+  ></button>
+</div>
+<div class="offcanvas-body small">
+  <div class="container mx-auto mt-5" style="max-width: 700px">
+    <form action="/blog/add" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="postImage" class="form-label">Cover Image</label>
+        <input
+          class="form-control"
+          name="postImageUrl"
+          type="file"
+          id="postImage"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          name="title"
+          class="form-control"
+          id="title"
+          placeholder="title"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="body" class="form-label">body</label>
+        <textarea
+          class="form-control"
+          id="body"
+          name="body"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-dark w-100">post</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

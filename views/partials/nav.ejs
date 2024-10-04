@@ -1,0 +1,35 @@
+<nav class="d-flex justify-content-between align-items-center px-3 p-2 position-sticky sticky-top" style="background-color: #030303">
+  <div></div>
+  <img src="images/web/Logo.png" alt="" style="width: 40px" />
+  <div class="dropdown">
+    <% if(locals.user){ %>
+    <button class="btn btn-secondary dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/user/logout">Log out</a></li>
+    </ul>
+    <%}else{%>
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/user/signin">Sign In</a></li>
+        <li><a class="dropdown-item" href="/user/signup">Sign Up</a></li>
+
+      </ul>
+    <%}%>
+
+          
+  </div>
+</nav>
+
+
+<% if(locals.error){ %>
+
+    <div class="container mt-3" style="max-width: 700px">
+      <div class="alert alert-danger" role="alert">
+        <%= locals.error %>
+      </div>
+    </div>
+
+    <% } %>

@@ -1,0 +1,57 @@
+{
+    "name": "Pearks",
+    "short_name": "pearks",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+      {
+        "sizes": "114x114",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "120x120",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "144x144",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "152x152",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "180x180",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "57x57",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "60x60",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "72x72",
+        "src": "image/logo.png"
+      },
+      {
+        "sizes": "76x76",
+        "src": "image/logo.png"
+      },
+      {
+        "src": "image/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "image/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "prefer_related_applications": true
+  }
+
+  
